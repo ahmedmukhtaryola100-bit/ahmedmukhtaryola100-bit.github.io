@@ -1,108 +1,25 @@
+
 html
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>YOLA MOVIES - Download Latest Hausa, Nollywood, Hollywood Movies</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Arial}
-body{background:#000;color:#fff}
-header{padding:12px 4%;background:#000;display:flex;justify-content:space-between;align-items:center;position:fixed;top:0;width:100%;z-index:100;border-bottom:1px solid #222}
-.logo{color:#e50914;font-size:26px;font-weight:900}
-.logo span{color:#fff;font-size:14px}
-nav a{color:#fff;text-decoration:none;margin-left:12px;font-size:12px}
-.hero{height:80vh;background:linear-gradient(to top,#000 15%, transparent 80%),url('https://image.tmdb.org/t/p/original/x2RS3uTcsJJ9IfjNPcgDmukoEcQ.jpg');background-size:cover;background-position:center;display:flex;align-items:end;padding:5%;margin-top:55px}
-.hero-content{max-width:600px}
-.hero h1{font-size:42px;line-height:1}
-.hero p{color:#ddd;margin:10px 0;font-size:14px}
-.btn{padding:11px 22px;border:none;border-radius:4px;font-weight:bold;cursor:pointer;text-decoration:none;display:inline-block;font-size:13px}
-.btn-red{background:#e50914;color:#fff}
-.btn-glass{background:rgba(109,109,110,0.7);color:#fff;margin-left:8px}
-.row{padding:16px 4%}
-.row h2{font-size:18px;margin-bottom:10px}
-.slider{display:flex;gap:11px;overflow-x:auto;scrollbar-width:none;padding-bottom:10px}
-.slider::-webkit-scrollbar{display:none}
-.card{min-width:145px;background:#181818;border-radius:6px;overflow:hidden;transition:.3s;flex-shrink:0}
-.card:hover{transform:scale(1.06)}
-.card img{width:100%;height:210px;object-fit:cover}
-.info{padding:8px}
-.info h4{font-size:12px;height:30px;overflow:hidden}
-.info small{color:#46d369;font-size:10px}
-.dl{display:block;background:#e50914;color:#fff;text-align:center;padding:7px;margin-top:7px;border-radius:3px;text-decoration:none;font-size:11px;font-weight:bold}
-.search-wrap{margin:70px 4% 0;background:#181818;border-radius:4px;display:flex;overflow:hidden;border:1px solid #333}
-.search-wrap input{flex:1;background:transparent;border:none;padding:13px;color:#fff;outline:none}
-.search-wrap button{background:#e50914;border:none;color:#fff;padding:0 18px;font-weight:bold}
-footer{background:#111;padding:25px 4%;margin-top:25px;text-align:center;border-top:1px solid #222}
-footer p{color:#777;font-size:12px;margin:6px 0}
-.whatsapp{position:fixed;bottom:18px;right:18px;background:#25D366;color:#fff;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none;z-index:200}
-@media(max-width:600px){.hero h1{font-size:26px}.card{min-width:120px}.card img{height:170px}}
-</style>
-</head>
-<body>
-<header>
-<div class="logo">YOLA<span>MOVIES</span></div>
-<nav><a href="#">Home</a><a href="#">Hausa</a><a href="#">Trending</a><a href="#">Contact</a></nav>
-</header>
-
-<div class="search-wrap">
-<input id="search" type="text" placeholder="Search movies..." onkeyup="doSearch()">
-<button>Search</button>
-</div>
-
-<div class="hero">
+<div class="hero" style="background:linear-gradient(to top,#000 20%, transparent 85%),linear-gradient(to right, rgba(0,0,0,0.8) 0%, transparent 60%),url('https://image.tmdb.org/t/p/original/yDHYTfA3R0jFYba16jBB1ef8oIt.jpg');background-size:cover;background-position:center top">
 <div class="hero-content">
-<h1>THE BOYS - SEASON 4</h1>
-<p>Hollywood Series 2024 | Action | Download Complete Season HD on Yola Movies - Fastest Site in Naija</p>
-<a class="btn btn-red" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">▶ Download 720p</a>
-<a class="btn btn-glass" href="#">+ My List</a>
+<span style="background:#e50914;padding:4px 8px;border-radius:3px;font-size:10px;font-weight:bold">🔥 #1 TRENDING IN NAIJA</span>
+<h1 style="margin-top:10px">DEADPOOL & WOLVERINE (2024)</h1>
+<p>Latest Hollywood Action 2024 | Download Full HD 720p, 1080p - Ryan Reynolds & Hugh Jackman - Now on Yola Movies</p>
+<div style="margin:10px 0;display:flex;gap:6px">
+<span style="border:1px solid #555;padding:3px 6px;font-size:10px">2024</span>
+<span style="border:1px solid #555;padding:3px 6px;font-size:10px">ACTION</span>
+<span style="border:1px solid #555;padding:3px 6px;font-size:10px">HD</span>
+<span style="background:#46d369;color:#000;padding:3px 6px;font-size:10px;font-weight:bold">IMDb 8.1</span>
+</div>
+<a class="btn btn-red" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">▶ Download 1080p (1.2GB)</a>
+<a class="btn btn-glass" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">⬇ Download 720p (700MB)</a>
 </div>
 </div>
 
-<div class="row"><h2>🔥 Trending Now in Nigeria</h2>
-<div class="slider" id="allMovies">
-<div class="card"><img src="https://image.tmdb.org/t/p/w500/qW4crfED8mpNDadSmMdi7ZDzhXF.jpg"><div class="info"><h4>Anikulapo: Rise of Spectre</h4><small>Nollywood HD</small><a class="dl" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">⬇ DOWNLOAD</a></div></div>
-<div class="card"><img src="https://image.tmdb.org/t/p/w500/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg"><div class="info"><h4>John Wick 4</h4><small>Hollywood Action</small><a class="dl" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">⬇ DOWNLOAD</a></div></div>
-<div class="card"><img src="https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg"><div class="info"><h4>Oppenheimer</h4><small>Oscar 2023</small><a class="dl" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">⬇ DOWNLOAD</a></div></div>
-<div class="card"><img src="https://image.tmdb.org/t/p/w500/d5NXSklXo0qyIYkgV94XAgMIckC.jpg"><div class="info"><h4>Dune Part 2</h4><small>Sci-Fi 2024</small><a class="dl" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">⬇ DOWNLOAD</a></div></div>
-<div class="card"><img src="https://image.tmdb.org/t/p/w500/gKkl1xY6T7YdkluOZ5o1a6fQ8g.jpg"><div class="info"><h4>Fast X</h4><small>Fast & Furious 10</small><a class="dl" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">⬇ DOWNLOAD</a></div></div>
-</div></div>
-
-<div class="row"><h2>🇳🇬 Hausa & Nollywood</h2>
-<div class="slider">
-<div class="card"><img src="https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg"><div class="info"><h4>Jagun Jagun</h4><small>Hausa Dubbed</small><a class="dl" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">⬇ DOWNLOAD</a></div></div>
-<div class="card"><img src="https://image.tmdb.org/t/p/w500/kDp1vUBnQB8a7ZjM4V4j3aJ6pJ.jpg"><div class="info"><h4>King of Boys</h4><small>Nollywood</small><a class="dl" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">⬇ DOWNLOAD</a></div></div>
-<div class="card"><img src="https://image.tmdb.org/t/p/w500/5YZbUmjbMa3ClvSW1Wj3D6Xq5M.jpg"><div class="info"><h4>Anikulapo</h4><small>2022 Hit</small><a class="dl" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">⬇ DOWNLOAD</a></div></div>
-<div class="card"><img src="https://image.tmdb.org/t/p/w500/lJsZT0Pq5H1zP5x3p6fQ6v.jpg"><div class="info"><h4>Gangs of Lagos</h4><small>Action</small><a class="dl" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">⬇ DOWNLOAD</a></div></div>
-</div></div>
-
-<div class="row"><h2>🎬 Hollywood Action 2024</h2>
-<div class="slider">
-<div class="card"><img src="https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg"><div class="info"><h4>Dune (2021)</h4><small>HD 1080p</small><a class="dl" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">⬇ DOWNLOAD</a></div></div>
-<div class="card"><img src="https://image.tmdb.org/t/p/w500/fypydCipcWDKDTTCoZFE3dZ7uT.jpg"><div class="info"><h4>Batman</h4><small>DC Comics</small><a class="dl" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">⬇ DOWNLOAD</a></div></div>
-<div class="card"><img src="https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg"><div class="info"><h4>The Batman</h4><small>2022</small><a class="dl" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">⬇ DOWNLOAD</a></div></div>
-<div class="card"><img src="https://image.tmdb.org/t/p/w500/3V4kLQg0kffABrQa5ooH0.jpg"><div class="info"><h4>Avatar 2</h4><small>Way of Water</small><a class="dl" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">⬇ DOWNLOAD</a></div></div>
-</div></div>
-
-<div class="row"><h2>💃 Bollywood & Kannywood</h2>
-<div class="slider">
-<div class="card"><img src="https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg"><div class="info"><h4>Inception</h4><small>Hollywood Classic</small><a class="dl" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">⬇ DOWNLOAD</a></div></div>
-<div class="card"><img src="https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg"><div class="info"><h4>The Dark Knight</h4><small>Best Movie Ever</small><a class="dl" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">⬇ DOWNLOAD</a></div></div>
-</div></div>
-
-<footer>
-<p style="color:#fff;font-weight:bold">YOLA MOVIES - Best Download Site in Naija</p>
-<p>Download Hausa, Nollywood, Hollywood, Bollywood Free HD Movies</p>
-<p>© 2026 Yola Movies | Contact: WhatsApp Button | Kaduna, Nigeria</p>
-</footer>
-
-<a class="whatsapp" href="https://wa.me/2340000000000" target="_blank">💬</a>
-
-<script>
-function doSearch(){
-let q=document.getElementById('search').value.toLowerCase();
-document.querySelectorAll('.card').forEach(c=>{c.style.display=c.innerText.toLowerCase().includes(q)?'block':'none'})
-}
-</script>
-</body>
-  </html>
+<div style="background:#111;padding:10px 4%;display:flex;gap:10px;overflow-x:auto;white-space:nowrap;border-bottom:1px solid #222">
+<a style="background:#e50914;color:#fff;padding:6px 12px;border-radius:20px;font-size:11px;text-decoration:none;font-weight:bold">🔥 Deadpool & Wolverine</a>
+<a style="background:#222;color:#fff;padding:6px 12px;border-radius:20px;font-size:11px;text-decoration:none">Gladiator 2</a>
+<a style="background:#222;color:#fff;padding:6px 12px;border-radius:20px;font-size:11px;text-decoration:none">Bad Boys 4</a>
+<a style="background:#222;color:#fff;padding:6px 12px;border-radius:20px;font-size:11px;text-decoration:none">Venom 3</a>
+<a style="background:#222;color:#fff;padding:6px 12px;border-radius:20px;font-size:11px;text-decoration:none">John Wick 4</a>
+</div>
