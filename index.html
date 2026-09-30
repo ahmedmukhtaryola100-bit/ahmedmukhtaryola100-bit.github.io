@@ -4,55 +4,88 @@ html
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>YOLA MOVIES - Netflix Better</title>
+<title>YOLA MOVIES - Download Latest Hausa, Nollywood, Hollywood Movies Free</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial}
 body{background:#000;color:#fff}
-header{padding:15px 4%;background:#000;position:fixed;top:0;width:100%;z-index:100;display:flex;justify-content:space-between}
+header{padding:12px 4%;background:#000;display:flex;justify-content:space-between;align-items:center;position:fixed;top:0;width:100%;z-index:100;border-bottom:1px solid #222}
 .logo{color:#e50914;font-size:26px;font-weight:900}
-.hero{height:80vh;background:linear-gradient(to top,#000,transparent),url('https://image.tmdb.org/t/p/original/fiVW06jE7z9YnO4trhaMEdclSiC.jpg');background-size:cover;display:flex;align-items:end;padding:5%;margin-top:50px}
-.hero h1{font-size:42px}
-.btn-red{background:#e50914;color:#fff;padding:12px 25px;border:none;border-radius:4px;font-weight:bold;text-decoration:none;display:inline-block;margin-top:15px}
-.row{padding:20px 4%}
-.row h2{margin-bottom:12px}
-.slider{display:flex;gap:10px;overflow-x:auto}
-.card{min-width:150px;background:#181818;border-radius:6px;overflow:hidden}
-.card img{width:100%;height:210px;object-fit:cover}
-.card-info{padding:8px}
-.card-info h4{font-size:12px}
-.download-btn{display:block;background:#e50914;color:#fff;text-align:center;padding:7px;margin-top:7px;border-radius:3px;text-decoration:none;font-size:12px;font-weight:bold}
-.search-box{margin:70px 4% 0;background:#222;display:flex;border-radius:4px;overflow:hidden}
-.search-box input{flex:1;background:transparent;border:none;padding:14px;color:#fff;outline:none}
+.logo span{color:#fff;font-size:14px}
+nav a{color:#fff;text-decoration:none;margin-left:15px;font-size:13px}
+.hero{height:85vh;background:linear-gradient(to top,#000 15%, transparent 85%),url('https://image.tmdb.org/t/p/original/fiVW06jE7z9YnO4trhaMEdclSiC.jpg');background-size:cover;background-position:center;display:flex;align-items:end;padding:5%;margin-top:55px}
+.hero-content{max-width:600px}
+.hero h1{font-size:46px;line-height:1}
+.hero p{color:#ddd;margin:12px 0;line-height:1.5}
+.btn{padding:12px 26px;border:none;border-radius:4px;font-weight:bold;cursor:pointer;text-decoration:none;display:inline-block}
+.btn-red{background:#e50914;color:#fff}
+.btn-glass{background:rgba(109,109,110,0.7);color:#fff;margin-left:8px}
+.row{padding:18px 4%}
+.row h2{font-size:19px;margin-bottom:12px}
+.slider{display:flex;gap:12px;overflow-x:auto;scrollbar-width:none;padding-bottom:10px}
+.slider::-webkit-scrollbar{display:none}
+.card{min-width:155px;background:#181818;border-radius:6px;overflow:hidden;transition:.3s}
+.card:hover{transform:scale(1.07)}
+.card img{width:100%;height:220px;object-fit:cover}
+.info{padding:9px}
+.info h4{font-size:13px;height:32px;overflow:hidden}
+.info small{color:#46d369;font-size:11px}
+.dl{display:block;background:#e50914;color:#fff;text-align:center;padding:8px;margin-top:8px;border-radius:3px;text-decoration:none;font-size:12px;font-weight:bold}
+.search-wrap{margin:70px 4% 0;background:#181818;border-radius:4px;display:flex;overflow:hidden;border:1px solid #333}
+.search-wrap input{flex:1;background:transparent;border:none;padding:14px;color:#fff;outline:none}
+.search-wrap button{background:#e50914;border:none;color:#fff;padding:0 20px;font-weight:bold}
+footer{background:#111;padding:30px 4%;margin-top:30px;text-align:center;border-top:1px solid #222}
+footer p{color:#777;font-size:13px;margin:8px 0}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;width:55px;height:55px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;z-index:200}
+@media(max-width:600px){.hero h1{font-size:28px}.card{min-width:125px}.card img{height:180px}}
 </style>
 </head>
 <body>
-<header><div class="logo">YOLA MOVIES</div><div>Home • Hausa • Action</div></header>
+<header>
+<div class="logo">YOLA<span>MOVIES</span></div>
+<nav><a href="#">Home</a><a href="#">Hausa</a><a href="#">Action</a><a href="#">Contact</a></nav>
+</header>
 
-<div class="search-box">
-<input type="text" id="s" placeholder="Search movie... Anikulapo, Jagun Jagun" onkeyup="searchM()">
+<div class="search-wrap">
+<input id="search" type="text" placeholder="Search 1000+ Movies... Anikulapo, Jagun Jagun, Fast X" onkeyup="doSearch()">
+<button>Search</button>
 </div>
 
 <div class="hero">
-<div>
-<h1>FAST X (2023)</h1>
-<p>Download 720p 1080p Free - Fast & Furious 10</p>
-<a class="btn-red" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">▶ DOWNLOAD NOW</a>
+<div class="hero-content">
+<h1>FAST X: FAST & FURIOUS 10</h1>
+<p>Action | 2023 | HD 720p 1080p | Dom Toretto and his family are targeted. Fastest download on Yola Movies.</p>
+<a class="btn btn-red" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">▶ Download (720p)</a>
+<a class="btn btn-glass" href="#">+ My List</a>
 </div>
 </div>
 
-<div class="row">
-<h2>🔥 Trending Now</h2>
-<div class="slider" id="movies">
-<div class="card"><img src="https://image.tmdb.org/t/p/w500/qW4crfED8mpNDadSmMdi7ZDzhXF.jpg"><div class="card-info"><h4>Anikulapo</h4><a class="download-btn" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">⬇ DOWNLOAD</a></div></div>
-<div class="card"><img src="https://image.tmdb.org/t/p/w500/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg"><div class="card-info"><h4>John Wick 4</h4><a class="download-btn" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">⬇ DOWNLOAD</a></div></div>
-<div class="card"><img src="https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg"><div class="card-info"><h4>Oppenheimer</h4><a class="download-btn" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">⬇ DOWNLOAD</a></div></div>
-<div class="card"><img src="https://image.tmdb.org/t/p/w500/d5NXSklXo0qyIYkgV94XAgMIckC.jpg"><div class="card-info"><h4>Dune 2</h4><a class="download-btn" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">⬇ DOWNLOAD</a></div></div>
-</div>
-</div>
+<div class="row"><h2>🔥 Trending Now in Nigeria</h2>
+<div class="slider" id="allMovies">
+<div class="card"><img src="https://image.tmdb.org/t/p/w500/qW4crfED8mpNDadSmMdi7ZDzhXF.jpg"><div class="info"><h4>Anikulapo: Rise of Spectre</h4><small>Yoruba • HD</small><a class="dl" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">⬇ DOWNLOAD</a></div></div>
+<div class="card"><img src="https://image.tmdb.org/t/p/w500/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg"><div class="info"><h4>John Wick Chapter 4</h4><small>Hollywood • Action</small><a class="dl" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">⬇ DOWNLOAD</a></div></div>
+<div class="card"><img src="https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg"><div class="info"><h4>Oppenheimer (2023)</h4><small>HD • Oscar</small><a class="dl" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">⬇ DOWNLOAD</a></div></div>
+<div class="card"><img src="https://image.tmdb.org/t/p/w500/d5NXSklXo0qyIYkgV94XAgMIckC.jpg"><div class="info"><h4>Dune: Part Two</h4><small>Sci-Fi • 2024</small><a class="dl" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">⬇ DOWNLOAD</a></div></div>
+</div></div>
+
+<div class="row"><h2>🇳🇬 Hausa & Nollywood Hits</h2>
+<div class="slider">
+<div class="card"><img src="https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg"><div class="info"><h4>Jagun Jagun</h4><small>Hausa Dubbed</small><a class="dl" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">⬇ DOWNLOAD</a></div></div>
+<div class="card"><img src="https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg"><div class="info"><h4>Dune (2021)</h4><small>Action</small><a class="dl" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">⬇ DOWNLOAD</a></div></div>
+</div></div>
+
+<footer>
+<p style="color:#fff;font-weight:bold;font-size:16px">YOLA MOVIES</p>
+<p>Best Site To Download Latest Hausa, Nollywood, Hollywood, Bollywood Movies Free in 2025/2026</p>
+<p>All movies are hosted on third party servers. We do not host any files.</p>
+<p>© 2026 Yola Movies - Created by Ahmed Mukhtar Yola</p>
+<p>Contact: yola@email.com | Follow us on Facebook, TikTok</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/2340000000000" target="_blank">💬</a>
 
 <script>
-function searchM(){
-let q=document.getElementById('s').value.toLowerCase();
+function doSearch(){
+let q=document.getElementById('search').value.toLowerCase();
 document.querySelectorAll('.card').forEach(c=>{
 c.style.display=c.innerText.toLowerCase().includes(q)?'block':'none'
 })
