@@ -1,134 +1,51 @@
 html
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>YOLA MOVIES - Download Latest Action Movies 2024 HD</title>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DAILY NAIJA MOVIES</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#050505;color:#fff;font-family:'Segoe UI',Arial;overflow-x:hidden}
-header{display:flex;justify-content:space-between;align-items:center;padding:15px 4%;background:rgba(0,0,0,0.95);position:sticky;top:0;z-index:100;backdrop-filter:blur(10px);border-bottom:2px solid #e50914}
-.logo{color:#e50914;font-size:26px;font-weight:900;letter-spacing:1px}
-.hero{height:92vh;display:flex;align-items:flex-end;padding:0;position:relative;overflow:hidden;background:#000}
-.hero-bg{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to top,#050505 10%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.1) 100%),linear-gradient(to right,#050505 5%, transparent 60%),url('https://image.tmdb.org/t/p/original/yDHYTfA3R0jFYba16jBB1ef8oIt.jpg');background-size:cover;background-position:center top;transform:scale(1.05);animation:zoom 20s infinite alternate}
-@keyframes zoom{0%{transform:scale(1.05)}100%{transform:scale(1.15)}}
-.hero-content{position:relative;z-index:2;padding:40px 4%;max-width:650px}
-.badge{background:linear-gradient(90deg,#e50914,#ff3c00);padding:6px 14px;border-radius:20px;font-size:11px;font-weight:bold;display:inline-block;box-shadow:0 0 20px rgba(229,9,20,0.6)}
-.hero h1{font-size:42px;margin:15px 0;line-height:1.1;text-shadow:0 2px 20px #000}
-.hero p{color:#ccc;font-size:14px;line-height:20px;margin-bottom:15px}
-.meta{display:flex;gap:8px;margin:15px 0;flex-wrap:wrap}
-.meta span{border:1px solid #444;padding:5px 10px;border-radius:4px;font-size:11px;background:rgba(255,255,255,0.05)}
-.meta.green{background:#46d369;color:#000;border:none;font-weight:bold}
-.btn{padding:12px 22px;border:none;border-radius:4px;font-weight:bold;margin-right:10px;margin-top:10px;display:inline-block;text-decoration:none;cursor:pointer;transition:0.3s}
-.btn-red{background:#e50914;color:#fff;box-shadow:0 4px 15px rgba(229,9,20,0.4)}.btn-red:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(229,9,20,0.6)}
-.btn-glass{background:rgba(255,255,255,0.15);color:#fff;backdrop-filter:blur(10px)}
-.filter-bar{background:#0a0a0a;padding:12px 4%;display:flex;gap:10px;overflow-x:auto;white-space:nowrap;border-bottom:1px solid #1a1a1a;position:sticky;top:58px;z-index:90}
-.filter-bar a{padding:8px 16px;border-radius:20px;font-size:12px;text-decoration:none;transition:0.3s;cursor:pointer}
-.active{background:#e50914;color:#fff;font-weight:bold}.inactive{background:#1a1a1a;color:#ccc}
-.search{padding:20px 4%;background:#050505}.search input{width:100%;padding:14px 20px;background:#111;border:1px solid #222;color:#fff;border-radius:30px;font-size:14px;outline:none}.search input:focus{border-color:#e50914}
-.title{padding:20px 4% 10px;display:flex;justify-content:space-between;align-items:center}
-.movies{padding:10px 4% 30px;display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:16px}
-.movie{background:#111;border-radius:8px;overflow:hidden;transition:0.3s;position:relative;border:1px solid #1a1a1a}.movie:hover{transform:translateY(-8px) scale(1.02);border-color:#e50914;box-shadow:0 10px 30px rgba(0,0,0,0.8)}
-.movie img{width:100%;height:240px;object-fit:cover}
-.movie-info{padding:10px}.movie-info h3{font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:4px}
-.movie-info p{font-size:10px;color:#888}
-.download{display:block;background:linear-gradient(90deg,#e50914,#b81d24);color:#fff;text-align:center;padding:8px;text-decoration:none;border-radius:4px;font-size:11px;font-weight:bold;margin-top:8px;transition:0.3s}
-.download:hover{background:#fff;color:#e50914}
-footer{background:#080808;padding:40px 4%;border-top:3px solid #e50914;margin-top:20px}
-</style>
-</head>
+*{margin:0;padding:0;box-sizing:border-box}body{background:#000;color:#fff;font-family:Arial}
+header{padding:12px 4%;background:#000;border-bottom:2px solid #e50914;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:99}
+.logo{color:#e50914;font-weight:900;font-size:18px;line-height:16px}
+.btn{padding:8px 14px;border-radius:20px;font-size:11px;text-decoration:none;font-weight:bold}
+.btn1{background:#222;color:#fff}.btn2{background:#e50914;color:#fff}
+.search{padding:12px 4%}.search input{width:100%;padding:12px;background:#1a1a1a;border:1px solid #333;color:#fff;border-radius:25px}
+.ad{margin:10px 4%;background:#111;border:1px solid #e50914;padding:15px;text-align:center;border-radius:8px}
+.grid{padding:10px 4%;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.card{background:#111;border-radius:6px;overflow:hidden}
+.card img{width:100%;height:160px;object-fit:cover;background:#e50914}
+.card h4{font-size:10px;padding:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card a{display:block;background:#e50914;color:#fff;text-align:center;padding:5px;font-size:9px;text-decoration:none;font-weight:bold}
+h2{padding:15px 4% 5px;font-size:14px}
+</style></head>
 <body>
-
-<header>
-<div class="logo">YOLA MOVIES</div>
-<div style="font-size:12px">🔥 20 LATEST HD</div>
-</header>
-
-<div class="hero">
-<div class="hero-bg"></div>
-<div class="hero-content">
-<span class="badge">🔥 #1 TRENDING IN ADAMAWA - NEW 2024</span>
-<h1>DEADPOOL & WOLVERINE</h1>
-<p>Wolverine is recovering from his injuries when he crosses paths with the loudmouth Deadpool. They team up to defeat a common enemy. Full HD 720p & 1080p - No Ads Direct Download!</p>
-<div class="meta">
-<span>2024</span><span>ACTION</span><span>2h 7m</span><span class="green">IMDb 8.1 ★</span><span style="background:#e50914;border:none">4K HDR</span>
+<header><div class="logo">DAILY<br>NAIJA<br>MOVIES</div><div><a class="btn btn1">News</a> <a class="btn btn2" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">Advertise</a></div></header>
+<div class="search"><input id="s" placeholder="🔍 Search Anikulapo, Jagun Jagun..." onkeyup="search()"></div>
+<div class="ad"><a href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank" style="color:#fff;text-decoration:none;font-weight:bold">🔥 DOWNLOAD MOVIES - CLICK HERE - AD 🔥</a></div>
+<h2>🔥 Trending Now</h2>
+<div class="grid" id="grid">
+<div class="card"><img src="https://upload.wikimedia.org/wikipedia/en/0e/An%C3%ADk%C3%BAl%C3%A1p%C3%B3_poster.jpeg"><h4>Anikulapo (2022)</h4><a href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD</a></div>
+<div class="card"><img src="https://m.media-amazon.com/images/M/MV5BZjBiOGI1Y2MtM2UyNi00NzJkLTk2ZDgtN2UyNzc5YmI1Y2I3XkEyXkFqcGc@._V1_.jpg"><h4>Jagun Jagun (2023)</h4><a href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD</a></div>
+<div class="card"><img src="https://m.media-amazon.com/images/M/MV5BMDkwNWJkOWMtOWRmNS00YjkyLWI1NWEtYmJkOWQ2OWRmYjkyXkEyXkFqcGc@._V1_.jpg"><h4>A Tribe Called Judah</h4><a href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD</a></div>
+<div class="card"><img src="https://upload.wikimedia.org/wikipedia/en/6/6f/King_of_Thieves_%282022_film%29_poster.jpeg"><h4>King of Thieves (2022)</h4><a href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD</a></div>
+<div class="card"><img src="https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg"><h4>Deadpool & Wolverine</h4><a href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD</a></div>
+<div class="card"><img src="https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg"><h4>Anikulapo Rise</h4><a href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD</a></div>
+<div class="card"><img src="https://image.tmdb.org/t/p/w500/kDp1vUBnMpe8ak4rjgl3cLELqjU.jpg"><h4>Kung Fu Panda 4</h4><a href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD</a></div>
+<div class="card"><img src="https://image.tmdb.org/t/p/w500/qW4crfED8mpNDadSmLPhtyWJ4W.jpg"><h4>Extraction 2</h4><a href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD</a></div>
+<div class="card"><img src="https://image.tmdb.org/t/p/w500/b0PlSFdDwbyK0cf5RxwDpaOJQvQ.jpg"><h4>Equalizer 3</h4><a href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD</a></div>
 </div>
-<a class="btn btn-red" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">▶ DOWNLOAD 1080p (1.8GB)</a>
-<a class="btn btn-glass" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">⬇ 720p (900MB)</a>
+<h2>👑 Yoruba Epics - Kunle Afolayan</h2>
+<div class="grid">
+<div class="card"><img src="https://image.tmdb.org/t/p/w500/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg"><h4>House of Gaa</h4><a href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD</a></div>
+<div class="card"><img src="https://image.tmdb.org/t/p/w500/oGythE98MYleE6mZlGs5oBGON.jpg"><h4>Lisabi</h4><a href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD</a></div>
+<div class="card"><img src="https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg"><h4>Dune 2</h4><a href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD</a></div>
 </div>
-</div>
-
-<div class="filter-bar">
-<a class="active">🔥 All Latest 20</a><a class="inactive">Action</a><a class="inactive">Hollywood</a><a class="inactive">Hausa Dubbed</a><a class="inactive">Nollywood</a>
-</div>
-
-<div class="search"><input type="text" id="search" placeholder="🔍 Search 20 movies... Eg: Gladiator, Bad Boys, John Wick..." onkeyup="searchMovie()"></div>
-
-<div class="title"><h3 style="font-size:18px">🔥 Latest Action Movies 2024 - 20 Movies</h3><span style="font-size:11px;color:#888">Updated Today</span></div>
-
-<div class="movies" id="movieGrid">
-
-<div class="movie"><img src="https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg"><div class="movie-info"><h3>Deadpool & Wolverine</h3><p>2024 • Action • 1080p</p><a class="download" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD HD</a></div></div>
-
-<div class="movie"><img src="https://image.tmdb.org/t/p/w500/cr9a5gQc4brp1a6gQ4l8kZz9xXx.jpg"><div class="movie-info"><h3>Gladiator 2</h3><p>2024 • Action • HD</p><a class="download" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD HD</a></div></div>
-
-<div class="movie"><img src="https://image.tmdb.org/t/p/w500/oGythE98MYleE6mZlGs5oBGON.jpg"><div class="movie-info"><h3>Bad Boys 4: Ride or Die</h3><p>2024 • Action • HD</p><a class="download" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD HD</a></div></div>
-
-<div class="movie"><img src="https://image.tmdb.org/t/p/w500/6aGyq6a5gQ4brp1a6gQ4l8kZz9xXx.jpg"><div class="movie-info"><h3>Venom: The Last Dance</h3><p>2024 • Action • HD</p><a class="download" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD HD</a></div></div>
-
-<div class="movie"><img src="https://image.tmdb.org/t/p/w500/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg"><div class="movie-info"><h3>John Wick Chapter 4</h3><p>2023 • Action • 4K</p><a class="download" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD HD</a></div></div>
-
-<div class="movie"><img src="https://image.tmdb.org/t/p/w500/gKkl1xYHJy6F86h5gQ4l8kZz9xXx.jpg"><div class="movie-info"><h3>Extraction 2</h3><p>2023 • Action • HD</p><a class="download" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD HD</a></div></div>
-
-<div class="movie"><img src="https://image.tmdb.org/t/p/w500/xq5gQ4brp1a6gQ4l8kZz9xXxXx.jpg"><div class="movie-info"><h3>The Beekeeper</h3><p>2024 • Action • HD</p><a class="download" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD HD</a></div></div>
-
-<div class="movie"><img src="https://image.tmdb.org/t/p/w500/kDp1vUBnMpe8ak4rjgl3cLELqjU.jpg"><div class="movie-info"><h3>Furiosa: Mad Max Saga</h3><p>2024 • Action • HD</p><a class="download" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD HD</a></div></div>
-
-<div class="movie"><img src="https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg"><div class="movie-info"><h3>Dune: Part Two</h3><p>2024 • Action • 4K</p><a class="download" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD HD</a></div></div>
-
-<div class="movie"><img src="https://image.tmdb.org/t/p/w500/z1p34vh7dEOnLDmyCrlUVLuoDzd.jpg"><div class="movie-info"><h3>Godzilla x Kong</h3><p>2024 • Action • HD</p><a class="download" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD HD</a></div></div>
-
-<div class="movie"><img src="https://image.tmdb.org/t/p/w500/kDp1vUBnMpe8ak4rjgl3cLELqjU.jpg"><div class="movie-info"><h3>Kung Fu Panda 4</h3><p>2024 • Action • HD</p><a class="download" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD HD</a></div></div>
-
-<div class="movie"><img src="https://image.tmdb.org/t/p/w500/qW4crfED8mpNDadSmLPhtyWJ4W.jpg"><div class="movie-info"><h3>Fast X</h3><p>2023 • Action • HD</p><a class="download" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD HD</a></div></div>
-
-<div class="movie"><img src="https://image.tmdb.org/t/p/w500/7gQ4l8kZz9xXxXxXxXxXxXxXx.jpg"><div class="movie-info"><h3>Aquaman 2</h3><p>2023 • Action • HD</p><a class="download" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD HD</a></div></div>
-
-<div class="movie"><img src="https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg"><div class="movie-info"><h3>Anikulapo: Rise</h3><p>2024 • Hausa Dubbed</p><a class="download" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD HD</a></div></div>
-
-<div class="movie"><img src="https://image.tmdb.org/t/p/w500/b0PlSFdDwbyK0cf5RxwDpaOJQvQ.jpg"><div class="movie-info"><h3>The Equalizer 3</h3><p>2023 • Action • HD</p><a class="download" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD HD</a></div></div>
-
-<div class="movie"><img src="https://image.tmdb.org/t/p/w500/NNxYkU70HPurnNCSiCjYAmhP2.jpg"><div class="movie-info"><h3>Mission Impossible 7</h3><p>2023 • Action • 4K</p><a class="download" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD HD</a></div></div>
-
-<div class="movie"><img src="https://image.tmdb.org/t/p/w500/46sp1Z9b2PPTgCMyA4a5gQ4l8kZz9.jpg"><div class="movie-info"><h3>Lift</h3><p>2024 • Action • HD</p><a class="download" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD HD</a></div></div>
-
-<div class="movie"><img src="https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg"><div class="movie-info"><h3>King of Thieves</h3><p>2022 • Yoruba • HD</p><a class="download" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD HD</a></div></div>
-
-<div class="movie"><img src="https://image.tmdb.org/t/p/w500/kDp1vUBnMpe8ak4rjgl3cLELqjU.jpg"><div class="movie-info"><h3>Inside Out 2</h3><p>2024 • Action • HD</p><a class="download" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD HD</a></div></div>
-
-<div class="movie"><img src="https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg"><div class="movie-info"><h3>Moana 2</h3><p>2024 • Action • HD</p><a class="download" href="https://www.profitableratecpmnetwork.com/pcqehc46sc?key=9da193170b458f032d3749795cf2fc81" target="_blank">DOWNLOAD HD</a></div></div>
-
-</div>
-
-<footer>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px">
-<div><h3 style="color:#e50914;margin-bottom:10px">YOLA MOVIES</h3><p style="font-size:12px;color:#999;line-height:18px">Yola Movies na #1 site for Yola, Adamawa to download latest 2024 Hollywood Action, Hausa Dubbed & Nollywood movies FREE in HD 720p/1080p/4K. Updated daily!</p></div>
-<div><h4 style="margin-bottom:10px">About Us</h4><p style="font-size:12px;color:#999">We dey provide latest action movies for Naija youth. Our goal na to make HD movies easy for everybody for Yola.</p></div>
-<div id="contact"><h4 style="margin-bottom:10px">Contact Us</h4><p style="font-size:12px;color:#999">Email: yolamovies@gmail.com<br>Location: Yola, Adamawa, Nigeria</p><a href="#" style="background:#25D366;color:#fff;padding:8px 15px;border-radius:4px;display:inline-block;margin-top:10px;text-decoration:none;font-size:12px;font-weight:bold">WhatsApp Us</a></div>
-</div>
-<div style="text-align:center;margin-top:25px;padding-top:20px;border-top:1px solid #1a1a1a"><p style="font-size:10px;color:#555">© 2024 YOLA MOVIES - 20 Latest Movies - All Rights Reserved | Made in Yola 🔥</p></div>
-</footer>
-
 <script>
-function searchMovie(){
-let input=document.getElementById('search').value.toLowerCase();
-let movies=document.getElementsByClassName('movie');
-for(let i=0;i<movies.length;i++){
-let title=movies[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
-movies[i].style.display=title.includes(input)?'':'none';
-}
+function search(){
+let v=document.getElementById('s').value.toLowerCase();
+document.querySelectorAll('.card').forEach(c=>{
+let t=c.querySelector('h4').innerText.toLowerCase();
+c.style.display=t.includes(v)?'':'none';
+})
 }
 </script>
-</body>
-                     </html>
+</body></html>
